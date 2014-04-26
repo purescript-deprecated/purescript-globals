@@ -43,8 +43,3 @@ foreign import encodeURI :: String -> String
 foreign import decodeURI :: String -> String
 
 foreign import isNaN :: Number -> Boolean
-
-foreign import typeof'
-  "function typeof$prime(x) {\
-  \  return {}.toString.call(x).slice(8, -1);\
-  \}" :: forall a. a -> String
