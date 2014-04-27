@@ -12,6 +12,6 @@
 
     nan :: Prim.Number
 
-    parseFloat :: Prim.String -> Prim.Number
+    readFloat :: Prim.String -> Prim.Number
 
-    parseInt :: Prim.String -> Prim.Number -> Prim.Number
+    readInt :: Prim.Number -> Prim.String -> Prim.Number

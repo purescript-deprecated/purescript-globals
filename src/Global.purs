@@ -8,11 +8,11 @@ foreign import infinity "var infinity = Infinity;" :: Number
 
 foreign import isFinite :: Number -> Boolean
 
-foreign import parseInt
-  "function parseInt(n) {\
-  \  return function(radix) {\
+foreign import readInt
+  "function readInt(radix) {\
+  \  return function(n) {\
   \    return parseInt(n, radix);\
   \  };\
-  \}" :: String -> Number -> Number
+  \}" :: Number -> String -> Number
 
-foreign import parseFloat :: String -> Number
+foreign import readFloat "var readFloat = parseFloat;" :: String -> Number
