@@ -2,6 +2,16 @@
 
 ## Module Global
 
+### Types
+
+    data Error :: *
+
+
+### Type Class Instances
+
+    instance showError :: Show Error
+
+
 ### Values
 
     infinity :: Prim.Number
