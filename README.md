@@ -14,14 +14,14 @@
 
 ### Values
 
-    infinity :: Prim.Number
+    infinity :: Number
 
-    isFinite :: Prim.Number -> Prim.Boolean
+    isFinite :: Number -> Boolean
 
-    isNaN :: Prim.Number -> Prim.Boolean
+    isNaN :: Number -> Boolean
 
-    nan :: Prim.Number
+    nan :: Number
 
-    readFloat :: Prim.String -> Prim.Number
+    readFloat :: String -> Number
 
-    readInt :: Prim.Number -> Prim.String -> Prim.Number
+    readInt :: Number -> String -> Number
