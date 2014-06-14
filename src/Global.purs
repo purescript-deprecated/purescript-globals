@@ -5,7 +5,8 @@ module Global
   , isFinite
   , readInt
   , readFloat
-  , Error(..)
+  , Error()
+  , error
   ) where
 
 foreign import nan "var nan = NaN;" :: Number
@@ -34,3 +35,8 @@ foreign import showErrorImpl
   "function showErrorImpl(err) {\
   \  return err.stack ? err.stack : err.toString();\
   \}" :: Error -> String
+
+foreign import error
+  "function error(msg) {\
+  \  return new Error(msg);\
+  \};" :: String -> Error

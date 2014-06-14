@@ -14,6 +14,8 @@
 
 ### Values
 
+    error :: String -> Error
+
     infinity :: Number
 
     isFinite :: Number -> Boolean
