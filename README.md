@@ -2,19 +2,7 @@
 
 ## Module Global
 
-### Types
-
-    data Error :: *
-
-
-### Type Class Instances
-
-    instance showError :: Show Error
-
-
 ### Values
-
-    error :: String -> Error
 
     infinity :: Number
 
