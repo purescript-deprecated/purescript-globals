@@ -21,6 +21,14 @@ foreign import readInt
   \    return parseInt(n, radix);\
   \  };\
   \}" :: Number -> String -> Number
+  
+foreign import toFixed """
+  function toFixed(decimal){
+    return function(n){
+      return n.toFixed(decimal);
+    };
+  }
+""" :: Number -> Number -> String
 
 foreign import readFloat "var readFloat = parseFloat;" :: String -> Number
 
