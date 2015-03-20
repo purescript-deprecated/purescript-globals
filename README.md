@@ -2,16 +2,54 @@
 
 ## Module Global
 
-### Values
 
-    infinity :: Number
+This module defines types for some global Javascript functions
+and values.
 
-    isFinite :: Number -> Boolean
+#### `nan`
 
-    isNaN :: Number -> Boolean
+``` purescript
+nan :: Number
+```
 
-    nan :: Number
+Not a number (NaN)
 
-    readFloat :: String -> Number
+#### `isNaN`
 
-    readInt :: Number -> String -> Number
+``` purescript
+isNaN :: Number -> Boolean
+```
+
+Test whether a number is NaN
+
+#### `infinity`
+
+``` purescript
+infinity :: Number
+```
+
+Positive infinity
+
+#### `isFinite`
+
+``` purescript
+isFinite :: Number -> Boolean
+```
+
+Test whether a number is finite
+
+#### `readInt`
+
+``` purescript
+readInt :: Number -> String -> Number
+```
+
+Parse an integer from a `String` in the specified base
+
+#### `readFloat`
+
+``` purescript
+readFloat :: String -> Number
+```
+
+Parse a floating point value from a `String`
