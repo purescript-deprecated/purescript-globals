@@ -6,15 +6,22 @@
     "purescript"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/purescript/purescript-globals.git"
+  },
   "ignore": [
     "**/.*",
     "bower_components",
     "node_modules",
     "output",
-    "tests",
-    "tmp",
+    "test",
     "bower.json",
-    "Gruntfile.js",
+    "gulpfile.js",
     "package.json"
-  ]
+  ],
+  "devDependencies": {
+    "purescript-assert": "^0.1.0",
+    "purescript-console": "^0.1.0"
+  }
 }

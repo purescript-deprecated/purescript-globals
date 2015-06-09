@@ -1,55 +1,15 @@
-# Module Documentation
+# purescript-globals
 
-## Module Global
+[![Build Status](https://travis-ci.org/purescript/purescript-globals.svg?branch=master)](https://travis-ci.org/purescript/purescript-globals)
 
+Typed definitions for standard Javascript globals.
 
-This module defines types for some global Javascript functions
-and values.
+## Installation
 
-#### `nan`
-
-``` purescript
-nan :: Number
+```
+bower install purescript-globals
 ```
 
-Not a number (NaN)
+## Module documentation
 
-#### `isNaN`
-
-``` purescript
-isNaN :: Number -> Boolean
-```
-
-Test whether a number is NaN
-
-#### `infinity`
-
-``` purescript
-infinity :: Number
-```
-
-Positive infinity
-
-#### `isFinite`
-
-``` purescript
-isFinite :: Number -> Boolean
-```
-
-Test whether a number is finite
-
-#### `readInt`
-
-``` purescript
-readInt :: Number -> String -> Number
-```
-
-Parse an integer from a `String` in the specified base
-
-#### `readFloat`
-
-``` purescript
-readFloat :: String -> Number
-```
-
-Parse a floating point value from a `String`
+- [Global](docs/Global.md)
