@@ -1,4 +1,4 @@
-/* globals exports JSON*/
+/* globals exports, JSON */
 "use strict";
 
 // module Global.Unsafe
