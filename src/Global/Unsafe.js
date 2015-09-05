@@ -3,6 +3,6 @@
 
 // module Global.Unsafe
 
-exports.unsafeStringify = function(x){
-  return JSON.stringify(x);
+exports.unsafeStringify = function (x) {
+    return JSON.stringify(x);
 };
