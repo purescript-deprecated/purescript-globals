@@ -4,5 +4,5 @@
 // module Global.Unsafe
 
 exports.unsafeStringify = function (x) {
-    return JSON.stringify(x);
+  return JSON.stringify(x);
 };
