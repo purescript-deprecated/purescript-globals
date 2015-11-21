@@ -19,3 +19,6 @@ foreign import readInt :: Int -> String -> Number
 
 -- | Parse a floating point value from a `String`
 foreign import readFloat :: String -> Number
+
+-- | uri encoding
+foreign import encodeURIComponent :: String -> String
