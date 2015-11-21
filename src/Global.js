@@ -18,3 +18,7 @@ exports.readInt = function (radix) {
 };
 
 exports.readFloat = parseFloat;
+
+exports.decodeURI = decodeURI;
+exports.encodeURI = encodeURI;
+exports.encodeURIComponent = encodeURIComponent;
