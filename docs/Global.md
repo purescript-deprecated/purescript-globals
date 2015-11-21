@@ -51,4 +51,36 @@ readFloat :: String -> Number
 
 Parse a floating point value from a `String`
 
+#### `decodeURI`
+
+``` purescript
+decodeURI :: String -> String
+```
+
+uri decoding
+
+#### `encodeURI`
+
+``` purescript
+encodeURI :: String -> String
+```
+
+uri encoding
+
+#### `decodeURIComponent`
+
+``` purescript
+decodeURIComponent :: String -> String
+```
+
+uri component decoding
+
+#### `encodeURIComponent`
+
+``` purescript
+encodeURIComponent :: String -> String
+```
+
+uri component encoding
+
 
