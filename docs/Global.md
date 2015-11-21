@@ -67,6 +67,14 @@ encodeURI :: String -> String
 
 uri encoding
 
+#### `decodeURIComponent`
+
+``` purescript
+decodeURIComponent :: String -> String
+```
+
+uri component decoding
+
 #### `encodeURIComponent`
 
 ``` purescript
