@@ -1,10 +1,15 @@
 module Test.Main where
 
-import Prelude
-import Control.Monad.Eff.Console (log)
-import Global
-import Test.Assert (assert)
+import Prelude (Unit, (==), ($), bind, not, negate, (<), (>), (/=))
 
+import Control.Monad.Eff (Eff)
+import Control.Monad.Eff.Console (CONSOLE, log)
+
+import Global
+
+import Test.Assert (ASSERT, assert)
+
+main :: Eff (console :: CONSOLE, assert :: ASSERT) Unit
 main = do
 
   log "nan /= nan"
