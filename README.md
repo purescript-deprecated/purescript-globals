@@ -12,6 +12,7 @@ Typed definitions for standard Javascript globals.
 bower install purescript-globals
 ```
 
-## Module documentation
+## Documentation
 
-- [Global](docs/Global.md)
+Module documentation is [published on Pursuit](http://pursuit.purescript.org/packages/purescript-globals).
+
