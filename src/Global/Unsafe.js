@@ -10,18 +10,18 @@ exports.unsafeStringify = function (x) {
 exports.unsafeToFixed = function (n) {
   return function (digits) {
     return n.toFixed(digits);
-  }
+  };
 };
 
 exports.unsafeToExponential = function (n) {
   return function (digits) {
     return n.toExponential(digits);
-  }
+  };
 };
 
 exports.unsafeToPrecision  = function (n) {
   return function (digits) {
     return n.toPrecision(digits);
-  }
+  };
 };
 
