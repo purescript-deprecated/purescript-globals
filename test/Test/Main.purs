@@ -45,19 +45,19 @@ main = do
   assert $ readFloat "3.5" == 3.5
 
   -- note the rounding
-  log $ "unsafeToFixed " <> (show num) <> " 1 == \"12345.7\""
-  assert $ unsafeToFixed num 1 == "12345.7"
+  log $ "unsafeToFixed 1" <> (show num) <> " == \"12345.7\""
+  assert $ unsafeToFixed 1 num == "12345.7"
 
   -- padded with zeros
-  log $ "unsafeToFixed " <> (show num) <> " 6 == \"12345.678900\""
-  assert $ unsafeToFixed num 6 == "12345.678900"
+  log $ "unsafeToFixed 6" <> (show num) <> " == \"12345.678900\""
+  assert $ unsafeToFixed 6 num == "12345.678900"
 
-  log $ "unsafeToExponential " <> (show num) <> " 4 == \"1.2346e+4\""
-  assert $ unsafeToExponential num 4 == "1.2346e+4"
+  log $ "unsafeToExponential 4" <> (show num) <> " == \"1.2346e+4\""
+  assert $ unsafeToExponential 4 num == "1.2346e+4"
 
-  log $ "unsafeToPrecision " <> (show num) <> " 3 == \"1.23e+4\""
-  assert $ unsafeToPrecision num 3 == "1.23e+4"
+  log $ "unsafeToPrecision 3" <> (show num) <> " == \"1.23e+4\""
+  assert $ unsafeToPrecision 3 num == "1.23e+4"
 
-  log $ "unsafeToPrecision " <> (show num) <> " 6 == \"12345.7\""
-  assert $ unsafeToPrecision num 6 == "12345.7"
+  log $ "unsafeToPrecision 6" <> (show num) <> " == \"12345.7\""
+  assert $ unsafeToPrecision 6 num == "12345.7"
 
