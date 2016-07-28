@@ -1,16 +1,18 @@
 module Test.Main where
 
-import Prelude (Unit, (==), ($), bind, not, negate, (<), (>), (/=))
+import Prelude
 
 import Control.Monad.Eff (Eff)
 import Control.Monad.Eff.Console (CONSOLE, log)
 
-import Global
+import Global (readFloat, readInt, isFinite, infinity, nan, isNaN)
+import Global.Unsafe (unsafeToPrecision, unsafeToExponential, unsafeToFixed)
 
 import Test.Assert (ASSERT, assert)
 
 main :: Eff (console :: CONSOLE, assert :: ASSERT) Unit
 main = do
+  let num = 12345.6789
 
   log "nan /= nan"
   assert $ nan /= nan
@@ -41,3 +43,21 @@ main = do
 
   log "readFloat \"3.5\" == 3.5"
   assert $ readFloat "3.5" == 3.5
+
+  -- note the rounding
+  log $ "unsafeToFixed 1" <> (show num) <> " == \"12345.7\""
+  assert $ unsafeToFixed 1 num == "12345.7"
+
+  -- padded with zeros
+  log $ "unsafeToFixed 6" <> (show num) <> " == \"12345.678900\""
+  assert $ unsafeToFixed 6 num == "12345.678900"
+
+  log $ "unsafeToExponential 4" <> (show num) <> " == \"1.2346e+4\""
+  assert $ unsafeToExponential 4 num == "1.2346e+4"
+
+  log $ "unsafeToPrecision 3" <> (show num) <> " == \"1.23e+4\""
+  assert $ unsafeToPrecision 3 num == "1.23e+4"
+
+  log $ "unsafeToPrecision 6" <> (show num) <> " == \"12345.7\""
+  assert $ unsafeToPrecision 6 num == "12345.7"
+
