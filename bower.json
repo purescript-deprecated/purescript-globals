@@ -17,7 +17,7 @@
     "package.json"
   ],
   "devDependencies": {
-    "purescript-assert": "^3.0.0",
-    "purescript-console": "^3.0.0"
+    "purescript-assert": "purescript/purescript-assert#compiler/0.12",
+    "purescript-console": "purescript/purescript-console#compiler/0.12"
   }
 }
