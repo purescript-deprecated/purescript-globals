@@ -1,8 +1,6 @@
 /* globals exports, JSON */
 "use strict";
 
-// module Global.Unsafe
-
 exports.unsafeStringify = function (x) {
   return JSON.stringify(x);
 };
@@ -25,3 +23,7 @@ exports.unsafeToPrecision  = function (digits) {
   };
 };
 
+exports.unsafeDecodeURI = decodeURI;
+exports.unsafeEncodeURI = encodeURI;
+exports.unsafeDecodeURIComponent = decodeURIComponent;
+exports.unsafeEncodeURIComponent = encodeURIComponent;
