@@ -2,15 +2,15 @@ module Test.Main where
 
 import Prelude
 
-import Control.Monad.Eff (Eff)
-import Control.Monad.Eff.Console (CONSOLE, log)
+import Effect (Effect)
+import Effect.Console (log)
 
 import Global (readFloat, readInt, isFinite, infinity, nan, isNaN)
 import Global.Unsafe (unsafeToPrecision, unsafeToExponential, unsafeToFixed)
 
-import Test.Assert (ASSERT, assert)
+import Test.Assert (assert)
 
-main :: Eff (console :: CONSOLE, assert :: ASSERT) Unit
+main :: Effect Unit
 main = do
   let num = 12345.6789
 

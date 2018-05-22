@@ -2,7 +2,7 @@
   "name": "purescript-globals",
   "homepage": "https://github.com/purescript/purescript-globals",
   "description": "Typed definitions for standard Javascript globals",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
     "url": "git://github.com/purescript/purescript-globals.git"
@@ -17,7 +17,7 @@
     "package.json"
   ],
   "devDependencies": {
-    "purescript-assert": "^3.0.0",
-    "purescript-console": "^3.0.0"
+    "purescript-assert": "^4.0.0",
+    "purescript-console": "^4.0.0"
   }
 }
