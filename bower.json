@@ -3,9 +3,10 @@
   "homepage": "https://github.com/purescript/purescript-globals",
   "description": "Typed definitions for standard Javascript globals",
   "license": "BSD-3-Clause",
+  "keywords": ["pursuit-deprecated"],
   "repository": {
     "type": "git",
-    "url": "git://github.com/purescript/purescript-globals.git"
+    "url": "https://github.com/purescript/purescript-globals.git"
   },
   "ignore": [
     "**/.*",
@@ -17,11 +18,11 @@
     "package.json"
   ],
   "devDependencies": {
-    "purescript-assert": "master",
-    "purescript-console": "master"
+    "purescript-assert": "^4.0.0",
+    "purescript-console": "^4.0.0"
   },
   "dependencies": {
-    "purescript-maybe": "master",
-    "purescript-functions": "master"
+    "purescript-maybe": "^4.0.0",
+    "purescript-functions": "^4.0.0"
   }
 }
